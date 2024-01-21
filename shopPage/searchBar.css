@@ -1,0 +1,49 @@
+.searchform { /*the search bar*/
+    background:#f4f4f4;
+    background:rgba(244,244,244,.79);
+    border: 1px solid #d3d3d3;
+    left: 85%;
+    padding: 2px 5px;
+    position: absolute;
+    margin: -22px 0 0 -170px;
+    top: 50%;
+    width:332px;
+    box-shadow:0 4px 9px rgba(0,0,0,.37);
+    border-radius: 10px;
+}
+  
+.searchform input, .searchform button { 
+    float: left;
+}
+
+.searchform input { /*the search bar text*/
+    background:#fefefe;
+    border: none;
+    font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin-right: 5px;
+    padding: 10px;
+    width: 216px;
+    box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+    border-radius: 9px;
+}
+
+.searchform input:focus { 
+    outline: none;
+    box-shadow:0 0 4px #0d76be inset;
+}
+  
+.searchform button { /*the search bar button*/
+    background: rgb(52,173,236);
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    padding: 10px;
+    width:90px;
+    box-shadow: 0 0 2px #2692dd inset;
+    border-radius: 9px;
+}
+/*it will change the opacity when the mouse hoverss*/
+.searchform button:hover {
+    opacity:.9;
+}

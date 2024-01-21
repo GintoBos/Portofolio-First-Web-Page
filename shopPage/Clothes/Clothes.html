@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel = "stylesheet" href = "/shopPage/Book/BookPageCSS.css">
+    <link rel = "stylesheet" href = "/shopPage/TopSection.css">
+    <link rel = "stylesheet" href = "/shopPage/searchBar.css">
+    <link rel = "stylesheet" href = "/shopPage/navigation.css">
+    <link rel = "stylesheet" href = "/shopPage/Book/BookcategoryImage.css">
+    <link rel="icon" type="image/png" href="/shopPage/Clothes/ClothesImg/Icon/shop.png"> <!--adds an icon next to the title-->
+    <script src="https://kit.fontawesome.com/014ecc3aa1.js" crossorigin="anonymous"></script> <!--icons in the bottom-->
+</head>
+<body>
+   <section class="search-container"> <!--the top section-->
+    <form class="searchform "> <!--the search bar-->
+        <input type="text" id = "product" placeholder="Search for a product...">
+        <button type="submit">Search</button>
+    </form>
+        <nav role = "navigation"> <!--navigating bar-->
+            <div id = "menuToggle">
+                <input type = "checkbox"/><!--hidden checkbox used as a click reciever-->
+    
+                    <!--span acting to preserve space-->
+                <span></span>
+                <span></span>
+                <span></span>
+    
+                <ul id = "menu"> <!--the navigation menu itself-->
+                    <a href="/loginPage/loginPage.html">Log in</a> <br> <br>
+                    <a href="/homepage/homePage.html">Home</a> <br> <br>
+                    <a href="/shopPage/shopPage.html">Shop</a> <br> <br>
+                    <a href="/shopPage/Book/Books.html">Books</a> <br> <br>
+                    <a href="/shopPage/Accessories/Accessories.html">Accessories</a> <br> <br>
+                    <a href="/shopPage/Tech/Tech.html">Tech</a> 
+                </ul>
+            </div>
+        </nav>
+        <div id = "author"><a href = "https://github.com/GintoBos" target = "_blank">Denis Papara</a></div>
+        <h1>Clothes</h1>
+    </section>
+    <section id = "Categories">
+        <figure>
+            <img src = "/shopPage/Clothes/ClothesImg/Clothes/WomenClothes.jpg" alt = "women">
+            <figcaption>Women</figcaption> 
+        </figure>
+        <figure style = "--c:#fff5">
+            <img src = "/shopPage/Clothes/ClothesImg/Clothes/menClothes.jpg" alt = "men">
+            <figcaption>Men</figcaption>
+        </figure>
+        <figure>
+            <img src = "/shopPage/Clothes/ClothesImg/Clothes/ChildrenClothes.jpg" alt = "children">
+            <figcaption>Children</figcaption>
+        </figure>
+        
+    </section>
+   
+
+    <div class="bottomInfo"> <!--the bottom part of the page with more info about me-->
+        <p>Done by Denis Papara 21/1/2024 6:09 PM.</p>
+        <p>For more info click on my <a href="https://github.com/GintoBos" target=_blank title="My Github">Github</a>
+            and <a href="https://www.linkedin.com/in/denis-papara-55882b2a8/" target=_blank
+                title="My Linkedin">Linkedin</a> accounts.</p>
+        <a href="https://github.com/GintoBos" target=_blank title="My Github">
+            <i class="fa-brands fa-github fa-2xl" style="color: #1a75ff;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/denis-papara-55882b2a8/" target=_blank title="My Linkedin">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #1a75ff;"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en" target=_blank title="Instagram Page">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #1a75ff;"></i>
+        </a>
+        </div>
+    
+
+    <script src = "/shopPage/shopPage.js"></script>
+</body>
+</html>

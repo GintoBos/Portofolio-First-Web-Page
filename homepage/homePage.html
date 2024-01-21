@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomePage</title>
+
+    <link rel="stylesheet" href="/homepage/homePageCSS.css"> <!--main body css attributes-->
+    <link rel="stylesheet" href="/homepage/navigation.css"> <!--navigation css atributes-->
+    <script defer src = "scroll.js"></script> <!--scroll fade transition js file(defer so its executed after the html body elements)-->
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> <!--font from Google Fonts-->
+    <link rel="icon" type="image/png" href="imagesHomePage/icons/home-button.png"> <!--adds an icon in the head of the webpage-->
+    <script src="https://kit.fontawesome.com/014ecc3aa1.js" crossorigin="anonymous"></script> <!--icons-->
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@latest/dist/kute.min.js"></script> <!--svg animation (Scalable Vector Graphics)-->
+</head>
+
+<body>
+
+    
+    <section id="blue">
+        <div class = "hidden"> 
+            <nav role = "navigation">
+                <div id = "menuToggle">
+                    <input type = "checkbox"/><!--hidden checkbox used as a click reciever-->
+        
+                        <!--span acting to preserve space-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+        
+                    <ul id = "menu"> <!--the navigation menu itself-->
+                        <a href="/loginPage/loginPage.html">Log in</a> <br> <br>
+                        <a href="/shopPage/shopPage.html">Shop</a> <br> <br>
+                        <a href="#redorange">About the Page</a> <br> <br>
+                        <a href="#green">History</a> <br> <br>
+                        <a href="#purple">Sources & Tools</a> <br>
+                    </ul>
+                </div>
+            </nav>
+            <div id = "author"><a href = "https://github.com/GintoBos" target = "_blank">Denis Papara</a></div>
+            <h1>Homepage</h1>
+            <p>Project created by Denis Papara with html , css and js.</p>
+            <div class="wave"> <!--dark blue wave effect in the top-->
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer wave1"></div> <!--wave transition between red and blue-->
+
+    <section id="redorange">
+            <div class="blob-content">
+                <div id = "textEdit">
+                    <h1>About The Page</h1>
+                    <p>Faqe Webi e krijuar nga Denis Papara si detyre kursi.</p>
+                    <p>Kjo Faqe eshte krijuar ne VS Code duke perdorur HTML , CSS dhe JavaScript.</p>
+                    <p>Si fillim kam perdorur html per te krijuar nje "skelet" te faqes per te krijuar nje ide me te qarte rreth projektit.</p>
+                    <p>Me pas perdora CSS per te ndryshuar atributet e secilit element ne Html.</p>
+                    <p>Me ane te JavaScript dhe CSS bera te mundur scroll animations.</p>
+                    <p>Per te krijuar nje faqe me pamje sa me unike kam perdorur edhe svg te animuara , si dhe disa prej dizanjeve jane bere mmanualisht.</p>
+                    <p>Qellimi ishte te krijoa nje faqe sa me unike dhe terheqese per syrin e njeriut.</p>
+                <br>
+                    <p>Website created by Denis Papara as a course assignment.</p>
+                    <p>This website was built in VS Code using HTML, CSS, and JavaScript.</p>
+                    <p>Initially, I used HTML to create the page's "skeleton" to form a clearer idea about the project.</p>
+                    <p>Later, I used CSS to modify the attributes of each element in HTML.</p>
+                    <p>With the help of JavaScript and CSS, I implemented scroll animations.</p>
+                    <p>To create a page with a more unique appearance, I also used animated SVGs, and some of the designs were made manually.</p>
+                    <p>The goal was to create a page as unique and attractive to the human eye as possible.</p>
+                </div>
+            </div>
+        <!--the center blob svg (Scalable Vector Graphics)-->
+        <svg
+            class="blob-motion" 
+            id="visual" 
+            viewBox="0 0 900 540" 
+            width="900" 
+            height="540"
+            xmlns="http://www.w3.org/2000/svg" 
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.1">
+
+            <g transform="translate(462.25297956540805 148.06844347462797)">
+                <path id="blob1"
+                    d="M96.5 -93.7C119.5 -73.5 128.8 -36.8 130.7 1.9C132.5 40.5 127.1 81.1 104.1 103.9C81.1 126.7 40.5 131.9 6.5 125.4C-27.6 119 -55.2 100.9 -84.6 78.1C-113.9 55.2 -145 27.6 -153.2 -8.3C-161.5 -44.2 -147.1 -88.4 -117.7 -108.6C-88.4 -128.7 -44.2 -124.9 -3.7 -121.1C36.8 -117.4 73.5 -113.9 96.5 -93.7"
+                    fill="#ff0066">
+                </path>
+            </g>
+            <g transform="translate(445.96422128455873 157.28354434714703)" style="visibility: hidden">
+                <path id="blob2"
+                    d="M86.5 -85.2C117.7 -55.2 152.6 -27.6 153.1 0.4C153.5 28.5 119.5 57 88.3 83.5C57 110 28.5 134.5 -3.2 137.7C-34.9 140.9 -69.8 122.8 -97.1 96.3C-124.4 69.8 -144.2 34.9 -145 -0.8C-145.9 -36.5 -127.7 -73.1 -100.4 -103.1C-73.1 -133.1 -36.5 -156.5 -4.5 -152.1C27.6 -147.6 55.2 -115.2 86.5 -85.2"
+                    fill="#ff0066">
+                </path>
+            </g>
+        </svg>
+        <!--the left blob svg-->
+        <svg 
+            class = "blob-motion" 
+            id="visual1" 
+            viewBox="0 0 900 540" 
+            width="900" 
+            height="540" 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.1">
+
+            <g transform="translate(5.590884519285609 324.99842806002886)">
+                <path id = "blob3"
+                    d="M93.1 -166.7C113 -132 116.2 -93.3 133 -59.8C149.9 -26.2 180.4 2 178.2 26.5C176.1 51 141.3 71.7 116.4 101.3C91.4 131 76.3 169.6 50.1 182.8C23.9 196.1 -13.2 183.9 -44.8 167.8C-76.4 151.6 -102.5 131.5 -128 107.7C-153.6 84 -178.8 56.7 -186.6 24.7C-194.5 -7.2 -185 -43.7 -172.9 -82.6C-160.8 -121.6 -146.1 -163 -116.8 -193.4C-87.6 -223.8 -43.8 -243.1 -3.6 -237.5C36.6 -231.9 73.2 -201.3 93.1 -166.7"
+                    fill="#ff0066"></path>
+            </g>
+            <g transform="translate(29.779969712352226 307.72092227363134)" style="visibility: hidden">
+                <path id = "blob4"
+                    d="M127.5 -200.7C160.4 -177.3 178.9 -133.7 176.9 -93.8C174.9 -53.9 152.4 -17.6 145.7 20.1C139 57.9 148.1 97 137.7 132.1C127.2 167.2 97.3 198.3 62.3 205.6C27.2 213 -12.9 196.7 -52.3 182.9C-91.7 169.2 -130.5 157.9 -164.7 134C-199 110.2 -228.7 73.7 -235.2 33.4C-241.7 -6.9 -225 -51 -199.1 -84C-173.3 -117 -138.3 -138.8 -103.6 -161.5C-68.8 -184.1 -34.4 -207.6 6.4 -217.6C47.3 -227.6 94.6 -224.2 127.5 -200.7"
+                    fill="#ff0066"></path>
+            </g>
+        </svg>
+        <!--the right blob svg-->
+        <svg 
+            class = "blob-motion"
+            id="visual2" 
+            viewBox="0 0 900 540" 
+            width="900" 
+            height="540" 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.1">
+   
+            <g transform="translate(456.5538376342543 245.7120989399346)">
+            <path id = "blob5"
+            d="M89.5 -88.4C113.1 -41.9 127.2 -4.8 123.8 35.5C120.4 75.9 99.5 119.5 51.5 164.8C3.5 210.1 -71.4 257.1 -107.3 235.1C-143.1 213.1 -139.8 122.1 -133.3 57.2C-126.7 -7.7 -116.9 -46.6 -94.2 -92.9C-71.4 -139.3 -35.7 -193.1 -1.4 -192.1C33 -191 66 -134.9 89.5 -88.4"
+            fill="#ff0066"></path>
+            </g>
+            <g transform="translate(385.26205719744826 261.5211400851663)" style="visibility: hidden">
+                <path id = "blob6"
+                    d="M228.4 -156.1C280.9 -116.3 297.9 -22.2 274 54.6C250.1 131.4 185.4 190.9 123.7 198C62.1 205 3.6 159.5 -45.6 124.4C-94.8 89.3 -134.6 64.6 -148.9 26.9C-163.3 -10.9 -152 -61.5 -122.9 -96C-93.8 -130.5 -46.9 -148.7 20.5 -165.1C88 -181.5 175.9 -196 228.4 -156.1"
+                    fill="#ff0066"></path>
+            </g>
+        </svg>
+
+        <script src = "JavaScript/homePageJS.js"></script>
+
+    </section>
+
+    <div class="spacer layer1"></div> <!--the wave transition between orange and green-->
+
+    <section id="green">
+        <div class = "hidden1">    
+                <h1>History</h1>
+                <p>HTML, ose HyperText Markup Language, shërben si blloku themelor i World Wide Web, duke ofruar një strukturë të standardizuar për krijimin dhe organizimin e përmbajtjes në faqet e internetit.</p>
+                <p>Zhvilluar nga Tim Berners-Lee në vitin 1991, HTML përdor një sistem etiketash për të përcaktuar dhe strukturuar elementët brenda një dokumenti.</p>
+                <p>Këto etiketa, të mbyllura në këndin e këndshëm, shënojnë komponentë të ndryshëm si tituj, paragrafe, lidhje, imazhe dhe shumë të tjera.</p>
+                <p>HTML mundëson integrimin e paqëndrueshëm të elementëve multimedialë dhe siguron kompatibilitet në të gjitha shfletuesit e internetit.</p>
+                <p>Si një pjesë kyçe e trios së bashku me CSS (Cascading Style Sheets) dhe JavaScript, HTML luajnë një rol të rëndësishëm në krijimin e faqeve të internetit dinamike dhe tërheqëse vizualisht, duke lejuar zhvilluesit të krijonjë përvoja online tërheqëse dhe interactive për përdoruesit në nivel botëror.</p>
+            <br>
+                <p>HTML, or HyperText Markup Language, serves as the fundamental building block of the World Wide Web, providing a standardized structure for creating and organizing content on web pages.</p>
+                <p>Developed by Tim Berners-Lee in 1991, HTML employs a system of tags to define and structure elements within a document.</p>
+                <p>These tags, enclosed in angle brackets, delineate various components such as headings, paragraphs, links, images, and more.</p>
+                <p>HTML facilitates the seamless integration of multimedia elements and ensures compatibility across different web browsers.</p>
+                <p>As a key component of the trio alongside CSS (Cascading Style Sheets) and JavaScript, HTML plays a pivotal role in the creation of dynamic and visually appealing web pages, allowing developers to craft engaging and interactive online experiences for users worldwide.</p>            
+            </div>
+        </div>
+
+        <!--the green outline blob svg-->
+        <svg 
+        class = "blob-motion1"
+        id="visual" 
+        viewBox="0 0 900 600" 
+        width="900" 
+        height="600" 
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" 
+        version="1.1">
+    
+        <g transform="translate(418.3477620919672 293.3917476919148)">
+            <path id = "blobA"
+                d="M135 -140.3C176.7 -93.3 213.3 -46.7 222.9 9.5C232.4 65.8 214.9 131.5 173.2 181.5C131.5 231.5 65.8 265.8 15.2 250.6C-35.4 235.4 -70.7 170.7 -97.2 120.7C-123.7 70.7 -141.4 35.4 -152.8 -11.4C-164.2 -58.2 -169.4 -116.4 -142.9 -163.4C-116.4 -210.4 -58.2 -246.2 -5.8 -240.4C46.7 -234.7 93.3 -187.3 135 -140.3"
+                fill="none" stroke="#009900" stroke-width="5"></path>
+        </g>
+        <g transform="translate(417.82355658319386 321.1907041934652)" style="visibility: hidden">
+            <path id = "blobD"
+                d="M170 -162.8C218.3 -121.6 254.1 -60.8 259.1 4.9C264 70.7 238.1 141.4 189.8 166.4C141.4 191.4 70.7 170.7 14 156.7C-42.7 142.7 -85.3 135.3 -122.7 110.3C-160 85.3 -192 42.7 -195.1 -3.1C-198.1 -48.8 -172.2 -97.6 -134.9 -138.7C-97.6 -179.9 -48.8 -213.5 6 -219.5C60.8 -225.5 121.6 -204 170 -162.8"
+                fill="none" stroke="#009900" stroke-width="5"></path>
+        </g>
+        </svg>
+
+        <svg 
+            class = "blob-motion1" 
+            id="visualgreen" 
+            viewBox="0 0 900 600" 
+            width="900" 
+            height="600" 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.1">
+    
+            <g transform="translate(477.16254950995955 163.412122719605)">
+                <path id = "blobE"
+                    d="M33.4 -38.9C40.4 -26.4 41.2 -13.2 39 -2.2C36.8 8.8 31.7 17.7 24.7 24C17.7 30.3 8.8 34.2 -0.5 34.7C-9.9 35.2 -19.8 32.5 -26 26.1C-32.1 19.8 -34.6 9.9 -34.4 0.1C-34.3 -9.7 -31.7 -19.3 -25.5 -31.8C-19.3 -44.3 -9.7 -59.7 1.8 -61.4C13.2 -63.2 26.4 -51.4 33.4 -38.9"
+                    fill="none" stroke="#009900" stroke-width="5"></path>
+            </g>
+            <g transform="translate(483.8023417281695 148.64468677135085)" style="visibility: hidden">
+                <path id = "cuteBlob"
+                d="M50.4 -54.5C59.8 -41 58 -20.5 61 3C64 26.5 71.8 53 62.4 65.5C53 78 26.5 76.5 1.7 74.8C-23.1 73.1 -46.2 71.2 -59.5 58.7C-72.9 46.2 -76.4 23.1 -73.6 2.8C-70.8 -17.4 -61.6 -34.9 -48.2 -48.4C-34.9 -61.9 -17.4 -71.4 1.5 -73C20.5 -74.5 41 -68 50.4 -54.5"
+                fill="none" stroke="#009900" stroke-width="5"></path>
+            </g>
+        </svg>
+    </svg>
+    <svg 
+        class = "blob-motion1" 
+        id="visualBlob" 
+        viewBox="0 0 900 540" 
+        width="900" 
+        height="540" 
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" 
+        version="1.1">
+        <g transform="translate(457.8127083973161 321.09144781070245)">
+            <path id = "cutegreenBlob"
+                d="M82.2 -138.7C103.7 -129.9 116.4 -102.2 125.4 -75.9C134.4 -49.7 139.7 -24.8 150.6 6.3C161.6 37.5 178.2 75 167.2 97.8C156.2 120.6 117.6 128.7 85.1 131.1C52.7 133.4 26.3 130 1.6 127.2C-23.2 124.5 -46.3 122.4 -84.1 123.2C-122 123.9 -174.4 127.5 -184.5 107.4C-194.6 87.3 -162.3 43.7 -155.4 4C-148.4 -35.7 -166.9 -71.3 -173.3 -120C-179.8 -168.8 -174.3 -230.5 -143.4 -233.9C-112.5 -237.2 -56.3 -182.1 -13 -159.7C30.3 -137.2 60.7 -147.4 82.2 -138.7"
+                fill="none" stroke="#009900" stroke-width="5"></path>
+        </g>
+        <g transform="translate(452.02596727984655 296.5287208986223)" style="visibility: hidden">
+            <path id = "isuckBlob"
+                d="M125.4 -167.3C147.6 -130.9 140.3 -77.2 153.4 -23.9C166.6 29.4 200.2 82.2 187.3 111.5C174.4 140.7 114.9 146.5 65.4 153C15.8 159.4 -23.7 166.6 -60.8 157.4C-97.9 148.1 -132.5 122.3 -158.6 86.9C-184.6 51.4 -202.1 6.4 -190.7 -29.3C-179.2 -64.9 -138.8 -91 -102.2 -124.9C-65.6 -158.8 -32.8 -200.4 9.4 -211.6C51.6 -222.9 103.3 -203.7 125.4 -167.3"
+                fill="none" stroke="#009900" stroke-width="5"></path>
+        </g>
+    </svg>
+    <script src = "greenBlobs.js"></script>
+    </section>
+
+    <div class="spacer peaks"></div> <!--transition between green and purple-->
+
+    <section id="purple">
+        <div class = "hidden2">
+            <h1>Sources & Tools</h1>
+            <div class = "links">
+                <a href = "https://code.visualstudio.com/download" target = "_blank">VS Code</a> <br>
+                <a href = "https://www.youtube.com/@Fireship" target = "_blank">Fireship - Youtube</a> <br>
+                <a href = "https://www.youtube.com/@beyondfireship" target = "_blank">Beyond Fireship - Youtube</a> <br>
+                <a href = "https://www.youtube.com/watch?v=ymPv7cXeSFM" target = "_blank">ProgProd - Youtube</a> <br>
+                <a href = "https://www.crazyegg.com/blog/homepage-design" target = "_blank">Homepage Desing Ideas - CrazyEgg</a> <br>
+                <a href = "https://www.youtube.com/watch?v=UmzFk68Bwdk" target = "_blank">Scroll based animations - Youtube</a> <br>
+                <a href = "https://thednp.github.io/kute.js/svgMorph.html" target = "_blank">KUTE.js SVG animations - Github</a> <br>
+                <a href = "https://github.com/shainakrumme/open-source-handbook" target = "_blank">Open Source Projects Guide - Github</a> <br>
+                <a href = "https://app.haikei.app/" target = "_blank">Haikei </a> <br>
+                <a href = "https://fontawesome.com" target = "_blank">Font Awesome </a> <br>
+                <a href = "https://fonts.google.com/" target = "_blank">Google Fonts</a> <br>
+                <a href = "https://www.flaticon.com/" target = "_blank">Flaticon icons</a> <br>
+                <a href = "https://codepen.io/" target = "_blank">CodePen</a> <br>  
+                <div class = "image-container">
+                    <img src = "imagesHomePage/icons/htmlIcon.png"> <!--icons-->
+                    <img src ="imagesHomePage/icons/cssIcon.png">
+                    <img src = "imagesHomePage/icons/jsIcon.png">
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="bottomInfo"> <!--the bottom part of the page with more info about me-->
+        <p>Done by Denis Papara 18/1/2024 9:30 PM.</p>
+        <p>For more info click on my <a href="https://github.com/GintoBos" target=_blank title="My Github">Github</a>
+            and <a href="https://www.linkedin.com/in/denis-papara-55882b2a8/" target=_blank
+                title="My Linkedin">Linkedin</a> accounts.</p>
+        <a href="https://github.com/GintoBos" target=_blank title="My Github">
+            <i class="fa-brands fa-github fa-2xl" style="color: #1a75ff;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/denis-papara-55882b2a8/" target=_blank title="My Linkedin">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #1a75ff;"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en" target=_blank title="Instagram Page">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #1a75ff;"></i>
+        </a>
+        </div>
+    </section>
+
+    <script src="homePageJS.js"></script>
+</body>
+
+</html>

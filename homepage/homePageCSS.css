@@ -1,0 +1,286 @@
+body{
+    margin : 0;
+    font-family: "Open Sans", sans-serif;
+    color:white;
+    background:#202731;
+    overflow-x:hidden;
+}
+
+section{ /*seperated the body in different sections for easier management*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;   
+    min-height:50vh;
+    
+}
+
+#blue{
+    background-color:  #1a75ff;
+}
+
+.curve{
+    position: absolute;
+    height:225px;
+    width: 100%;
+    bottom:0;
+}
+
+.curve::before{ /*pseudo elements*/
+    content: '';
+    display:block;
+    position:absolute;
+    border-radius:100% 49%; /*the second value is to create an ellipse not a perfect circle*/
+    width:55%;
+    height: 100%;
+    background-color: #C62368;
+    transform: translate(84.8% , 60%);
+}
+
+.curve::after{
+    content: '';
+    display:block;
+    position:absolute;
+    border-radius:100% 50%; 
+    width:55%;
+    height: 100%;
+    background-color: #1a75ff;
+    transform: translate(-4% , 40%);
+    z-index:-1; /*the darker color will sit on top of the lighter one*/
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 63px;
+}
+
+.wave .shape-fill {
+    fill: #0033CC;
+}
+
+.bottomInfo{ /*made a semi transparent div so i can put more information*/
+    width:auto;
+    height: auto;
+    padding: 20px;  
+    background-color: #000000b0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    text-align:center;
+}
+
+.bottomInfo p{
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size:small;
+    text-align:center;
+}
+
+.bottomInfo a{
+    color:#ffb3cc;
+    text-decoration: none; 
+}
+
+.bottomInfo a:hover{
+    color:#1a75ff;
+}
+
+.spacer{
+    aspect-ratio: 960/300;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.layer1{ /*seperator between red and green*/
+    background-image:url('./layer1.svg');
+}
+
+#redorange{
+    background-color: #C62368;
+}
+
+
+.wave1{ /*seperates the red and blue*/
+    background-image:url('./wave1.svg');
+}
+
+#green{
+    background-color:#1affc6;
+}
+
+#purple{
+    background-color:#6600ff;
+}
+
+
+.peaks{ /*seperates the green and purple*/
+    background-image:url('./peaks.svg');
+}
+
+.blob-motion { /*the blobs position*/
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+}
+
+.blob-content {
+    z-index: 1;
+    opacity:0;
+    transition:all 1s;
+}
+
+.blob-content h1{
+    color: #990033;
+    font-size:50px;
+}
+
+.blob-content a{
+    color: #ffb3cc;
+    font-size: 22px;
+}
+
+.blob-content a:hover{
+    color:#1a75ff;
+}
+
+.blob-content nav{
+    text-align:center;
+}
+
+#visual1{/*the left blob*/
+    margin-right:640px;
+}
+
+#visual2{/*the right blob*/
+    margin-top:100px;
+    margin-left:1000px;
+}
+
+.hidden{ /*scroll transition effects*/
+    opacity:0;
+    transition:all 1s;
+}
+
+.hidden h1{
+    font-size:100px;
+}
+
+.hidden1 {
+    opacity:0;
+    transition:all 1s;
+}
+
+.hidden1 h1{
+    font-size:50px;
+    color:#00802b;
+}
+
+.hidden1 p{
+    color:#00802b;
+    text-align:justify;  
+}
+.hidden2 h1{
+    font-size:50px;
+}
+
+.hidden2{
+    opacity:0;
+    transition:all 1s;
+}
+.hidden p{
+    text-align:center;
+}
+.show{
+    opacity:1;
+}
+
+#links{
+    text-align:center;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:100px;
+}
+
+.image-container { /*image container for three container*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+  
+.image-container img {
+    width: 25%; 
+    height: auto;
+}
+
+.links a{  /*links attributes*/
+    text-decoration: none; /*removes the link underlines*/
+    color:white;
+}
+
+.links a:hover{
+    color:deeppink;
+}
+
+#visualgreen{ /*all the visual ids are used to position the blobs*/
+    margin-left:950px;
+    
+}
+
+#visualBlob{
+    margin-top:100px;
+    margin-right:1000px;
+}
+
+.blob-motion1{ 
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+}
+
+#textEdit{
+    color:#ffccff;
+    text-align:justify;
+}
+
+#greenA{
+    color:#00802b;
+}
+
+/*top right corner my name*/
+#author{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index:1;
+}
+
+#author a{
+    text-decoration: none;
+    color:white;
+}
+
+#author a:hover{
+    color:#0033CC;
+}

@@ -1,0 +1,122 @@
+#menuToggle
+{
+   display: block;
+   position: absolute;
+   top: 70px;
+   left: 50px;
+   
+   z-index:1; /*makes the menu stand on top of the other elements*/
+   
+   -webkit-user-select: none;/*it make so the text cant be selected*/
+   user-select: none;
+}
+ 
+#menuToggle a
+{
+   text-decoration: none; /*removes the link underlines*/
+   color: #232323;
+   
+   transition: color 0.3s ease;
+}
+ 
+#menuToggle a:hover /*when the mouse is hovered it will change color*/
+{
+   color: #1a75ff;
+}
+ 
+ 
+#menuToggle input /*the input*/
+{
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0;
+   z-index: 2; 
+
+}
+
+ 
+#menuToggle span /*the hamburger style button*/
+{
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #ccffff   ;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   /*the transition between the hamburger and the menu*/
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+}
+ 
+#menuToggle span:first-child
+{
+   transform-origin: 0% 0%; /*top left corner*/
+}
+
+#menuToggle span:nth-last-child(2)
+{
+   transform-origin: 0% 100%; /*bottom left corner*/
+}
+ 
+/*makes the hamburger into a crossmark*/
+#menuToggle input:checked ~ span
+{
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px); /*rotates 45 deg around the origin and moves the element 2px left and 1px up*/
+   background: #1a75ff;
+}
+ 
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+}
+ 
+ 
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+   transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu /*the menu*/
+{
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #ededed;
+   list-style-type:none;
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+ 
+#menu li
+{
+   padding: 10px 0;
+   font-size: px;
+}
+
+#menuToggle input:checked ~ ul
+{
+   transform: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/png" href="SignUpimage/icons/key.png">
+    <link rel="stylesheet" href="SignUp.css">
+
+    <!--link to use the font from google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!--link to use the icons from the Font Awesome Website-->
+    <script src="https://kit.fontawesome.com/014ecc3aa1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="topInfo"> <!--this div will be the top navigator part of this page-->
+        <a href="/homepage/homePage.html" target="_self" title="HomePage"> <!--puts us in the homepage-->
+            <i class="fa-solid fa-house fa-2xl" style="color: #e30f1a;"></i>
+        </a>
+        <a href="https://www.paypal.com/us/signin" target="_blank" title="Paypal">
+            <i class="fa-brands fa-paypal fa-2xl" style="color: #e30f1a;"></i>
+        </a>
+        <a href = "/shopPage/shopPage.html" target = "_self" title = "Shop">
+            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #e30f1a;"></i>
+        </a>
+    </div>
+
+    <div class="login-container"> <!--the login part in the middle of the page-->
+        <h1>Sign-Up</h1>
+        <form id="login-form">
+            <input type = "text" id = "name" placeholder="Name Surname">
+            <input type="email" id="email" placeholder="Email or Phone Number">
+            <input type="password" id="pass" placeholder="Password">
+            <input type="checkbox" id="conditions">
+            <label for="conditions">I agree with to the terms & conditions</label>
+        </form>
+        <a href = "/loginPage/loginPage.html" target = "_self">
+            <button type="submit">Log in</button>
+        </a>
+        <a href = "/homepage/homePage.html" target = "_self">
+            <button id = "signUp" style = "margin-top:10px">Sign in</button>
+        </a>
+        
+
+        <div class="links"> <!--links to connect to me-->
+            <a href="https://www.instagram.com/?hl=en" target=_blank title="Instagram Page">Instagram</a>
+            <a href="https://github.com/GintoBos" target=_blank title="My Github">Github</a>
+            <a href="https://www.linkedin.com/in/denis-papara-55882b2a8/" target=_blank title="My Linkedin">Linkedin</a>
+        </div>
+    </div>
+
+    <div class="bottomInfo"> <!--the bottom part of the page with more info about me-->
+        <p>Website page done by Denis Papara 19/1/2024 6:01 PM.</p>
+        <p>For more info click on my <a href="https://github.com/GintoBos" target=_blank title="My Github">Github</a>
+            and <a href="https://www.linkedin.com/in/denis-papara-55882b2a8/" target=_blank
+                title="My Linkedin">Linkedin</a> accounts.</p>
+        <a href="https://github.com/GintoBos" target=_blank title="My Github">
+            <i class="fa-brands fa-github fa-2xl" style="color: #e30f1a;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/denis-papara-55882b2a8/" target=_blank title="My Linkedin">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #e30f1a;"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en" target=_blank title="Instagram Page">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #e30f1a;"></i>
+        </a>
+
+    </div>
+
+    <script src="/SignUpPage/SignUp.js"></script>
+</body>
+
+</html>
+

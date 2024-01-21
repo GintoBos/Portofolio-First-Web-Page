@@ -1,0 +1,19 @@
+/*the product images*/
+img {
+    /*will make the img sinto a circle and will cut it in half */
+    --m: radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat,
+        radial-gradient(circle farthest-side at left, #000 99%, #0000) 100% 0/46% 92% no-repeat;
+    -webkit-mask: var(--m);
+    /*will put a greyscale over the img*/
+    mask: var(--m);
+    filter: grayscale(.5);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/*the hover effect*/
+img:hover {
+    -webkit-mask-position: 7.5% 50%, 92.5% 50%;
+    mask-position: 7.5% 50%, 92.5% 50%;
+    filter: grayscale(0);
+}

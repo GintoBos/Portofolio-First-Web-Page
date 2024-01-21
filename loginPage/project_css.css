@@ -1,0 +1,130 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image:url(imagesLogIn/bgimage/img2.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.login-container {
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    margin: 230px auto;
+    border-radius:15px;
+    background-color: #ffffff7d;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top : 5px;
+    color:rgb(255, 26, 26);
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius:5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    color:#e50914;
+    font-family: "Open Sans", sans-serif;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+
+button[type="submit"] {
+    font-family: "Open Sans", sans-serif;
+    border-radius:5px;
+    width: 100%;
+    padding: 7px;
+    background-color: #e30f1a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #b1020b;
+}
+.links a { 
+    color:#e50914;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    text-align:center; 
+    margin-left:15px;
+    margin-top:15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{ /*will make the links change color when the mouse hovers over them*/
+    color:#1a75ff;
+}
+
+.bottomInfo{ /*made a semi transparent div so i can put more information*/
+    width:auto;
+    height: auto;
+    padding: 20px;
+    margin: 150px auto;
+    background-color: #000000b0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 100;
+    width: 100%;
+    text-align:center;
+}
+
+.bottomInfo p{
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size:small;
+    text-align:center;
+}
+
+.bottomInfo a{
+    color:#1a75ff;
+}
+
+.bottomInfo a:hover{
+    color:#e50914;
+}
+
+.topInfo{ /*similar to the bottom part but smaller & moves whith us when we scroll*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color:#000000b0;
+    position:fixed;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.topInfo a{ /*css attributes for the icons in the top*/
+    margin-left:20px;
+    padding: 50px 10px 10px 10px;   
+}
+
+
+#signUp{
+    font-family: "Open Sans", sans-serif;
+    border-radius:5px;
+    width: 100%;
+    padding: 7px;
+    background-color: #e30f1a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
