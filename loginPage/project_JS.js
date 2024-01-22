@@ -8,3 +8,8 @@ document.querySelector("#login-form").addEventListener('submit' , function(event
     window.alert(`Email : ${email}`);
     window.alert(`PassWord : ${pass}`);
 });
+
+//after clicking log in it will redirect us to the homepage
+function ToHomePage() {
+    window.location.href = '/homepage/homePage.html';
+  }
